@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Список задач</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/task.js"></script>
+
+</head>
+
+<body>
+
+<body>
+
+<h2>Список задач</h2>
+
+<div class="container well well-lg">
+    <div class="row">
+
+
+        <div class="warning"></div>
+        <div class="success"></div>
+
+        <div class="col-md-8">
+            <div id="active">
+                <h3>Активные задачи<span id="counter"></span></h3>
+
+                <ul id="active-tasks">
+                    <li><input type="checkbox" checked><label>Умыться</label>
+                        <button class="delete">Удалить</button>
+                    </li>
+                    <li><input type="checkbox"><label>Поесть на завтрак кашу</label>
+                        <button class="delete">Удалить</button>
+                    </li>
+                    <li><input type="checkbox"><label>Попить чаю с вареньем</label>
+                        <button class="delete">Удалить</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="completed">
+                <h3>Закрытые задачи</h3>
+                <ul id="completed-tasks">
+                    <li><input type="checkbox" checked><label>Проснуться</label>
+                        <button class="delete">Удалить</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <input id="filter" class="form-control" type="text" placeholder="Поиск...">
+            </div>
+
+            <div class="form-group">
+                <select class="form-control" id="sort">
+                    <option value="default">Все задачи</option>
+                    <option value="active">Активные задачи</option>
+                    <option value="completed">Закрытые задачи</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input id="new-task" class="form-control" type="text" placeholder="Добавить задачу">
+            </div>
+            <div class="form-group btn-add">
+                <button id="add" class="btn btn-success">Добавить</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>

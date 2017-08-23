@@ -1,0 +1,132 @@
+body {
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: block;
+    margin: 5px auto 0;
+}
+
+.message {
+    float: left;
+    margin-top: 15px;
+    display: none;
+}
+
+.warning {
+    color: #FF0000;
+}
+
+.success {
+    color: #4DB84D;
+}
+
+.message
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 span {
+    background-color: #5cb85c;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    height: 22px;
+    width: 26px;
+    padding: 4px 0 0 0;
+    float: right;
+}
+
+li * {
+    float: left;
+}
+
+li, h3 {
+    clear: both;
+    list-style: none;
+}
+
+input, button {
+    outline: none;
+}
+
+button {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    font-family: Helvetica Neue Light, sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #333;
+}
+
+.btn-add {
+    text-align: right;
+}
+
+h3, label[for='new-task'] {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 10px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    font-family: Helvetica Neue Light, sans-serif;
+    color: #888;
+}
+
+input[type="text"]:focus {
+    color: #333;
+}
+
+label[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+}
+
+li {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 7px;
+}
+
+li > label {
+    font-size: 18px;
+    width: 237px;
+    padding: 0 0 0 25px;
+}
+
+li > input[type="text"] {
+    width: 226px;
+}
+
+li > .delete:hover {
+    color: #CF2323;
+}
+
+#completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+}
